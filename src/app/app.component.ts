@@ -1,3 +1,5 @@
+// app.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-app16';
+  
+  isActive: boolean = false;
+  showmenu(){
+     if(this.isActive){
+      this.isActive=false;
+     }
+     else{
+      this.isActive=true
+     }
+  }
+  
 }
